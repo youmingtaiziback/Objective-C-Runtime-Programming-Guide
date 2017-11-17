@@ -15,5 +15,14 @@
 * 确定消息发往何处
 * 发消息并携带原始的参数
 
+```
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    if ([someOtherObject respondsToSelector:[anInvocation selector]])
+        [anInvocation invokeWithTarget:someOtherObject];
+    else
+        [super forwardInvocation:anInvocation];
+}
+```
+
 
 
