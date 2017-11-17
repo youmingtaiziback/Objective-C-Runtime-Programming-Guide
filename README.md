@@ -9,7 +9,7 @@ Objective-C语言尽量把决策从编译和链接从推迟到运行时。所以
 * [Runtime Versions and Platforms](/runtime-versions-and-platforms.md)
 * [Interacting with the Runtime](/interacting-with-the-runtime.md)
 * [Messaging](/messaging.md)
-* Dynamic Method Resolution
+* [Dynamic Method Resolution](/dynamic-method-resolution.md)
 * Message Forwarding
 * Type Encodings
 * Declared Properties
