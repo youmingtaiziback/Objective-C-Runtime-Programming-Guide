@@ -5,4 +5,5 @@
 * [Interacting with the Runtime](interacting-with-the-runtime.md)
 * [Messaging](messaging.md)
 * [Dynamic Method Resolution](dynamic-method-resolution.md)
+* [Message Forwarding](message-forwarding.md)
 
