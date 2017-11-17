@@ -9,5 +9,7 @@ modern runtime最显著的特性就是：
 * legacy runtime中，改变一个类的成员变量会导致它的所有子类重新编译
 * modern runtime中不需要
 
+另外，modern runtime支持将成员变量合称为属性
+
 
 
