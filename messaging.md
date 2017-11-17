@@ -17,9 +17,7 @@
 
 ## Using Hidden Arguments
 
-objc\_msgSend找到函数实现时，会把所有的参数传递给函数实现，并额外传递两个参数：self、SEL
+objc\_msgSend找到函数实现时，会把所有的参数传递给函数实现，并额外传递两个参数：self、\_cmd
 
 这两个参数是在编译期间被加入的
-
-
 
