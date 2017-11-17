@@ -28,12 +28,12 @@ objc\_msgSend找到函数实现时，会把所有的参数传递给函数实现�
 ```
 void (*setter)(id, SEL, BOOL);
 int i;
- 
+
 setter = (void (*)(id, SEL, BOOL))[target
     methodForSelector:@selector(setFilled:)];
 for ( i = 0 ; i < 1000 ; i++ )
     setter(targetList[i], @selector(setFilled:), YES);
 ```
 
-
+前两个参数是self和\_cmd
 
