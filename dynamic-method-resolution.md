@@ -14,9 +14,9 @@
 void dynamicMethodIMP(id self, SEL _cmd) {
     // implementation ....
 }
+
 @implementation MyClass
-+ (BOOL)resolveInstanceMethod:(SEL)aSEL
-{
++ (BOOL)resolveInstanceMethod:(SEL)aSEL {
     if (aSEL == @selector(resolveThisMethodDynamically)) {
           class_addMethod([self class], aSEL, (IMP) dynamicMethodIMP, "v@:");
           return YES;
