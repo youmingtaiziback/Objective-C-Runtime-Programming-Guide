@@ -24,5 +24,14 @@
 }
 ```
 
+被转发的消息的返回值返回给原始的调用者
+
+## Forwarding and Multiple Inheritance
+
+
+
+  
+
+
 
 
