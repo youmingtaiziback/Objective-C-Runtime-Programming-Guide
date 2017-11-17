@@ -30,7 +30,5 @@ void dynamicMethodIMP(id self, SEL _cmd) {
 
 ## Dynamic Loading
 
-
-
-
+Objective-C程序可以在运行时加载类和分类，这些类和分类被和一开始加载的同等对待
 
