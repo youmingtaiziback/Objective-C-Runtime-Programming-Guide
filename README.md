@@ -7,7 +7,7 @@ Objective-C语言尽量把决策从编译和链接从推迟到运行时。所以
 ## Organization of This Document
 
 * [Runtime Versions and Platforms](/runtime-versions-and-platforms.md)
-* Interacting with the Runtime
+* [Interacting with the Runtime](/interacting-with-the-runtime.md)
 * Messaging
 * Dynamic Method Resolution
 * Message Forwarding
