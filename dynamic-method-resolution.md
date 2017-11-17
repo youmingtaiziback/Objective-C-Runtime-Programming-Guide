@@ -8,3 +8,23 @@
 
 通过resolveInstanceMethod:和resolveClassMethod:可以分别为实例和类添加方法
 
+可以通过class\_addMethod添加方法
+
+```
+void dynamicMethodIMP(id self, SEL _cmd) {
+    // implementation ....
+}
+@implementation MyClass
++ (BOOL)resolveInstanceMethod:(SEL)aSEL
+{
+    if (aSEL == @selector(resolveThisMethodDynamically)) {
+          class_addMethod([self class], aSEL, (IMP) dynamicMethodIMP, "v@:");
+          return YES;
+    }
+    return [super resolveInstanceMethod:aSEL];
+}
+@end
+```
+
+
+
