@@ -26,5 +26,5 @@ void dynamicMethodIMP(id self, SEL _cmd) {
 @end
 ```
 
-
+消息传递机制之前，类有机会提供动态方法解析。如果respondsToSelector:或者instancesRespondToSelector:被触发，动态方法解析就有机会为一个selector提供IMP。
 
