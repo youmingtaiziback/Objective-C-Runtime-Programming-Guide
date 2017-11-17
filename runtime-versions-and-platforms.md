@@ -11,5 +11,9 @@ modern runtime最显著的特性就是：
 
 另外，modern runtime支持将成员变量合称为属性
 
+## Platforms
+
+iPhone上面app用的是modern runtime
+
 
 
