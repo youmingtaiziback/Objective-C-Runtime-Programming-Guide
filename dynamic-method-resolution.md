@@ -32,3 +32,10 @@ void dynamicMethodIMP(id self, SEL _cmd) {
 
 Objective-C程序可以在运行时加载类和分类，这些类和分类被和一开始加载的同等对待
 
+实现动态加载的方法
+
+* objc\_loadModules
+* NSBundle提供的更便捷的动态加载的接口
+
+
+
