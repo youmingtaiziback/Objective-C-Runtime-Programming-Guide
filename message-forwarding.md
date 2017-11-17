@@ -8,3 +8,5 @@
 
 可以实现forwardInvocation:给消息一个默认的回应，或者以其他方式避免错误。一般用forwardInvocation:将消息传递给其他对象
 
+任何对象都从NSObject继承了`forwardInvocation:`方法。NSObject默认的实现只是调用了`doesNotRecognizeSelector:`
+
