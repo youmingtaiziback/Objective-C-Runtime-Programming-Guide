@@ -20,5 +20,9 @@ Objective-C程序与运行时系统在三个层面上有交互：Objective-C代�
 
 * `methodForSelector:`
 
+## Runtime Functions
+
+运行时系统是一个动态共享库，包含的函数的数据结构定义在`/usr/include/objc`
+
 
 
