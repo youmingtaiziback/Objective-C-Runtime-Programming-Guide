@@ -25,3 +25,15 @@ objc\_msgSend找到函数实现时，会把所有的参数传递给函数实现�
 
 规避动态绑定的唯一方法就是获取方法地址直接调用。一个方法被调用多次时可以采取直接调用的方式减少时间
 
+```
+void (*setter)(id, SEL, BOOL);
+int i;
+ 
+setter = (void (*)(id, SEL, BOOL))[target
+    methodForSelector:@selector(setFilled:)];
+for ( i = 0 ; i < 1000 ; i++ )
+    setter(targetList[i], @selector(setFilled:), YES);
+```
+
+
+
