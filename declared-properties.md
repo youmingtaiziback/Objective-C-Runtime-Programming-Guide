@@ -2,3 +2,20 @@
 
 编译器遇到属性声明时，会生成与类、分类、协议相关联的描述性元数据。你可以通过函数访问这些元数据，该函数支持在类、协议中按名字查找属性，把属性的attributes拷贝到C字符串数组。每一个类和协议都声明了属性列表
 
+## Property Type and Functions
+
+属性的结构
+
+```
+typedef struct objc_property *Property;
+```
+
+获取属性列表
+
+```
+objc_property_t *class_copyPropertyList(Class cls, unsigned int *outCount)
+objc_property_t *protocol_copyPropertyList(Protocol *proto, unsigned int *outCount)
+```
+
+
+
