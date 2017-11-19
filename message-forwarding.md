@@ -40,3 +40,27 @@ _The Objective-C Programming Language_的“Remote Messaging”一张提到的pr
 
 尽管转发会模拟继承，respondsToSelector:和isKindOfClass:只会看对象的集成关系。如果要改变这种默认行为，可以覆盖这两个方法。instancesRespondToSelector:、conformsToProtocol:也是一样
 
+要实现消息转发，需要实现
+
+```
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    if ([someOtherObject respondsToSelector:[anInvocation selector]])
+        [anInvocation invokeWithTarget:someOtherObject];
+    else
+        [super forwardInvocation:anInvocation];
+}
+```
+
+```
+- (NSMethodSignature*)methodSignatureForSelector:(SEL)selector {
+    NSMethodSignature* signature = [super methodSignatureForSelector:selector];
+    if (!signature) {
+       signature = [surrogate methodSignatureForSelector:selector];
+    }
+    return signature;
+}
+
+```
+
+
+
