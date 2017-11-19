@@ -17,5 +17,12 @@ objc_property_t *class_copyPropertyList(Class cls, unsigned int *outCount)
 objc_property_t *protocol_copyPropertyList(Protocol *proto, unsigned int *outCount)
 ```
 
+获取属性
+
+```
+objc_property_t class_getProperty(Class cls, const char *name)
+objc_property_t protocol_getProperty(Protocol *proto, const char *name, BOOL isRequiredProperty, BOOL isInstanceProperty)
+```
+
 
 
