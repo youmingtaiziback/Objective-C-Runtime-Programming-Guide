@@ -11,8 +11,8 @@ Objective-C语言尽量把决策从编译和链接从推迟到运行时。所以
 * [Messaging](/messaging.md)
 * [Dynamic Method Resolution](/dynamic-method-resolution.md)
 * [Message Forwarding](/message-forwarding.md)
-* Type Encodings
-* Declared Properties
+* [Type Encodings](/type-encodings.md)
+* [Declared Properties](/Declared Properties)
 
 ## See Also
 
