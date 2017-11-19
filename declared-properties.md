@@ -30,5 +30,17 @@ objc_property_t protocol_getProperty(Protocol *proto, const char *name, BOOL isR
 const char *property_getAttributes(objc_property_t property)
 ```
 
+访问一个类的所有属性相关信息的代码就是
+
+```
+id LenderClass = objc_getClass("Lender");
+unsigned int outCount, i;
+objc_property_t *properties = class_copyPropertyList(LenderClass, &outCount);
+for (i = 0; i < outCount; i++) {
+    objc_property_t property = properties[i];
+    fprintf(stdout, "%s %s\n", property_getName(property), property_getAttributes(property));
+}
+```
+
 
 
