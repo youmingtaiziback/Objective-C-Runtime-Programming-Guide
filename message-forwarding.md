@@ -34,7 +34,5 @@
 
 消息转发不仅模拟了多重继承，也使得开发轻量级对象来代表或者覆盖大量对象。代理对象代表消息被传递的对象
 
-_The Objective-C Programming Language_的“Remote Messaging”一张提到的proxy就是这样一种代理。
-
-
+_The Objective-C Programming Language_的“Remote Messaging”一张提到的proxy就是这样一种surrogate。
 
