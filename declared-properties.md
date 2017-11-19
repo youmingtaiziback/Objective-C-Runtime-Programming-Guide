@@ -24,5 +24,11 @@ objc_property_t class_getProperty(Class cls, const char *name)
 objc_property_t protocol_getProperty(Protocol *proto, const char *name, BOOL isRequiredProperty, BOOL isInstanceProperty)
 ```
 
+获取属性的attributes
+
+```
+const char *property_getAttributes(objc_property_t property)
+```
+
 
 
