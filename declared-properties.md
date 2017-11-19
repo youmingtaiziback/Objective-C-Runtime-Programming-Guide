@@ -42,5 +42,11 @@ for (i = 0; i < outCount; i++) {
 }
 ```
 
+## Property Type String
+
+## Property Attribute Description Examples
+
+
+
 
 
