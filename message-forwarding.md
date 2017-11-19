@@ -28,10 +28,7 @@
 
 ## Forwarding and Multiple Inheritance
 
-
-
-  
-
+消息转发提供了大多数多重继承的特性
 
 
 
