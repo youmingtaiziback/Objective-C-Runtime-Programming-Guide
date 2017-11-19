@@ -38,5 +38,5 @@ _The Objective-C Programming Language_的“Remote Messaging”一张提到的pr
 
 ## Forwarding and Inheritance
 
-尽管转发会模拟继承，respondsToSelector:和isKindOfClass:只会看对象的集成关系。如果要改变这种默认行为，可以覆盖这两个方法。
+尽管转发会模拟继承，respondsToSelector:和isKindOfClass:只会看对象的集成关系。如果要改变这种默认行为，可以覆盖这两个方法。instancesRespondToSelector:、conformsToProtocol:也是一样
 
