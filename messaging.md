@@ -36,5 +36,5 @@ for ( i = 0 ; i < 1000 ; i++ )
 
 前两个参数是self和\_cmd
 
-methodForSelector:是运行时提供的，不是Objective-C语言的特性
+`methodForSelector:`是运行时提供的，不是Objective-C语言的特性
 
