@@ -6,9 +6,9 @@
 
 有时需要动态的提供方法的实现，比如动态属性的@dynamic指令
 
-通过resolveInstanceMethod:和resolveClassMethod:可以分别为实例和类添加方法
+通过`resolveInstanceMethod:`和`resolveClassMethod:`可以分别为实例和类添加方法
 
-可以通过class\_addMethod添加方法
+可以通过`class_addMethod`添加方法
 
 ```
 void dynamicMethodIMP(id self, SEL _cmd) {
@@ -34,7 +34,7 @@ Objective-C程序可以在运行时加载类和分类，这些类和分类被和
 
 实现动态加载的方法
 
-* objc\_loadModules
+* `objc_loadModules`
 * NSBundle提供的更便捷的动态加载的接口
 
 
