@@ -4,7 +4,7 @@
 
 ## Forwarding
 
-向一个对象发送了处理不了的消息时，在发生错误之前，运行时会向对象发送forwardInvocation:消息并附带唯一的参数NSInvocation对象，该对象封装了原始的方法和参数
+向一个对象发送了处理不了的消息时，在发生错误之前，运行时会向对象发送`forwardInvocation:`消息并附带唯一的参数NSInvocation对象，该对象封装了原始的方法和参数
 
 可以实现`forwardInvocation:`给消息一个默认的回应，或者以其他方式避免错误。一般用`forwardInvocation:`将消息传递给其他对象
 
@@ -34,11 +34,11 @@
 
 消息转发不仅模拟了多重继承，也使得开发轻量级对象来代表或者覆盖大量对象。代理对象代表消息被传递的对象
 
-_The Objective-C Programming Language_的“Remote Messaging”一张提到的proxy就是这样一种surrogate。proxy负责将消息转发给远程接受者的细节，确保参数值被拷贝和接收。它把本地地址给了远程对象，使得远程对象可以接受来自其他app的消息
+_The Objective-C Programming Language_的“Remote Messaging”一章提到的proxy就是这样一种surrogate。proxy负责将消息转发给远程接受者的细节，确保参数值被拷贝和接收。它把本地地址给了远程对象，使得远程对象可以接受来自其他app的消息
 
 ## Forwarding and Inheritance
 
-尽管转发会模拟继承，respondsToSelector:和isKindOfClass:只会看对象的集成关系。如果要改变这种默认行为，可以覆盖这两个方法。instancesRespondToSelector:、conformsToProtocol:也是一样
+尽管消息转发会模拟继承，respondsToSelector:和isKindOfClass:只会看对象的继承关系。如果要改变这种默认行为，可以覆盖这两个方法。instancesRespondToSelector:、conformsToProtocol:也是一样
 
 要实现消息转发，需要实现
 
@@ -59,7 +59,6 @@ _The Objective-C Programming Language_的“Remote Messaging”一张提到的pr
     }
     return signature;
 }
-
 ```
 
 
